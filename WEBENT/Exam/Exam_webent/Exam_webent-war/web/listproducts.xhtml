@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:dataTable border="1" value="#{productBean.items}" var="p" >
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="prodId" />
+                    </f:facet>
+                    <h:outputText value="#{p.prodID}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="prodName" />
+                    </f:facet>
+                    <h:outputText value="#{p.prodName}"/>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="prodPrice" />
+                    </f:facet>
+                    <h:outputText value="#{p.prodPrice}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="prodQuantity" />
+                    </f:facet>
+                    <h:outputText value="#{p.prodQuantity}"/>
+                </h:column>
+
+            </h:dataTable>
+
+
+        </h:form>
+        <a href="faces/addproduct.xhtml"></a>
+        
+    </h:body>
+</html>
+

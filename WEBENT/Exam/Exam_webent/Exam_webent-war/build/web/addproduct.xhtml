@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Add new Product</h1>
+        <h:form>
+            prodId    <h:inputText value="#{productBean.prodId}" />
+            prodName    <h:inputText value="#{productBean.prodName}" />
+            prodPrice    <h:inputText value="#{productBean.prodPrice}" />
+            prodQuantity    <h:inputText value="#{productBean.prodQuantity}" />
+            <h:commandButton value="Addnew" action="#{productBean.insertProd()}" />
+        </h:form>
+
+    </h:body>
+</html>
+
