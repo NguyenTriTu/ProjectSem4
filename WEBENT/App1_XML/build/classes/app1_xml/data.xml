@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductList>
+    <Product>
+        <ProductID>P001</ProductID>
+        <ProductName>Vong Hoa</ProductName>
+        <Price>11</Price>
+        <Quantity>1</Quantity>
+        <Image>1.jpg</Image>
+    </Product>
+    <Product>
+        <ProductID>P002</ProductID>
+        <ProductName>Vong Hoa</ProductName>
+        <Price>11</Price>
+        <Quantity>1</Quantity>
+        <Image>1.jpg</Image>
+    </Product>
+    <Product>
+        <ProductID>P003</ProductID>
+        <ProductName>Vong Hoa</ProductName>
+        <Price>11</Price>
+        <Quantity>1</Quantity>
+        <Image>1.jpg</Image>
+    </Product>
+    <Product>
+        <ProductID>P004</ProductID>
+        <ProductName>Vong Hoa</ProductName>
+        <Price>11</Price>
+        <Quantity>1</Quantity>
+        <Image>1.jpg</Image>
+    </Product>
+    <Product>
+        <ProductID>P005</ProductID>
+        <ProductName>Vong Hoa</ProductName>
+        <Price>11</Price>
+        <Quantity>1</Quantity>
+        <Image>1.jpg</Image>
+    </Product>
+</ProductList>
