@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Book List ~!</h1>
+        <h4><a href="http://localhost:8080/App4_JSF/faces/addNew.xhtml">Back to AddNew!</a></h4>
+        <h:form>
+            <h:dataTable border="1" value="#{bookBean.items}" var="b">
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Book ID"/>
+                    </f:facet>
+                    <h:outputText value="#{b.bookId}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Book title"/>
+                    </f:facet>
+                    <h:outputText value="#{b.title}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="Book price"/>
+                    </f:facet>
+                    <h:outputText value="#{b.price}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value=""/>
+                    </f:facet>
+                    <h:commandButton value="Delete" action="#{bookBean.deleteBook(b.bookId)}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value=""/>
+                    </f:facet>
+                    <h:commandButton value="Edit" action="#{bookBean.editBook(b.bookId)}" />
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>
+
