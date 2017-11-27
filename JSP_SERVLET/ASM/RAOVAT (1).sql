@@ -170,7 +170,7 @@ INSERT INTO tblComment(UserId,PostId,Content) VALUES
 (5,1,N'Và mùa xuân và mùa xuân tới'),
 (1,3,N'Dạo này người ta có khiến em cười'),
 (4,2,N'Xin nhớ thay nuông chiều làm ta lười hơn'),
-(5,1,N'Anh dù không muốn tình cờ gặp lại nhau lần nữa'),
+(5,1,N'Anh dù không muốn tình cờ gặp lại nhau lần nữa')
 GO
 GO
 SELECT * FROM tblUser
