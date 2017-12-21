@@ -50,11 +50,12 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>JSP Page</title>\n");
       out.write("        <script lang=\"javacript\" >\n");
-      out.write("//            function LoginClick()\n");
-      out.write("//            {\n");
-      out.write("//                this.frmLogin.action = \"MySeverlet\";\n");
-      out.write("//                this.frmLogin.submit();\n");
-      out.write("//            }\n");
+      out.write("            function LoginClick()\n");
+      out.write("            {\n");
+      out.write("                alert('Hay nhap dia chi email hop le.\\nExample@gmail.com');\n");
+      out.write("                this.frmLogin.action = \"MySeverlet\";\n");
+      out.write("                this.frmLogin.submit();\n");
+      out.write("            }\n");
       out.write("//             function RegisterClick()\n");
       out.write("//            {\n");
       out.write("//                this.frmLogin.action = \"Controller?ac=Register\";\n");
@@ -86,7 +87,7 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <h1>WellCome Back!</h1>\n");
       out.write("        <!--<FORM id=\"frmLogin\" action=\"Controller?ac=add\" onclick=\"LoginClick\">-->\n");
-      out.write("        <FORM id=\"frmLogin\" action=\"MySeverlet\" onclick=\"LoginClick\" method=\"post\">\n");
+      out.write(" \n");
       out.write("            User:<input type=\"text\" name=\"txtUser\" value=\"");
       out.print(u);
       out.write("\" /><br/>\n");
@@ -96,11 +97,11 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <input type=\"submit\" name=\"action\" onclick=\"LoginClick\" value=\"Login\"/>\n");
       out.write("            <input type=\"checkbox\" name=\"ckRemember\" checked=\"true\"/>\n");
       out.write("            <!--            <input type=\"submit\" name=\"action\" onclick=\"RegisterClick\" value=\"Register\"/>-->\n");
-      out.write("        </FORM>\n");
+      out.write("     \n");
       out.write("\n");
       out.write("\n");
       out.write("        ");
-            } else {           
+            } else {
         
       out.write("\n");
       out.write("        <h1>Login Form!</h1>\n");
@@ -112,9 +113,10 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <input type=\"checkbox\" name=\"ckRemember\" value=\"Remember Acc\"/>\n");
       out.write("            <!--            <input type=\"submit\" name=\"action\" onclick=\"RegisterClick\" value=\"Register\"/>-->\n");
       out.write("        </FORM>\n");
+      out.write("        ");
 
-}
-
+            }
+        
       out.write("\n");
       out.write("    </body>\n");
       out.write("</html>\n");

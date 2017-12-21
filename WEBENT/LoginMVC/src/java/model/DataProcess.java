@@ -36,7 +36,7 @@ public class DataProcess {
         boolean f = false;
         String sql = "Select * from tblUser Where _username=? and _password=?";
         try {
-            PreparedStatement prst = getConnection().prepareCall(sql);
+            PreparedStatement prst = getConnection().prepareStatement(sql);
             prst.setString(1, _u);
             prst.setString(2, _p);
             ResultSet rs = prst.executeQuery(); // tap ket qua

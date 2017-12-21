@@ -11,11 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <script lang="javacript" >
-//            function LoginClick()
-//            {
-//                this.frmLogin.action = "MySeverlet";
-//                this.frmLogin.submit();
-//            }
+            function LoginClick()
+            {
+                this.frmLogin.action = "MySeverlet";
+                this.frmLogin.submit();
+            }
 //             function RegisterClick()
 //            {
 //                this.frmLogin.action = "Controller?ac=Register";
@@ -44,29 +44,29 @@
         %>
 
         <h1>WellCome Back!</h1>
-        <!--<FORM id="frmLogin" action="Controller?ac=add" onclick="LoginClick">-->
-        <FORM id="frmLogin" action="MySeverlet" onclick="LoginClick" method="post">
+        <!--<FORM id="frmLogin" action="Controller?ac=add" >-->
+        <FORM id="frmLogin" action="MySeverlet" method="post">
             User:<input type="text" name="txtUser" value="<%=u%>" /><br/>
             Pass:<input type="password" name="txtPass" value="<%=p%>"/><br/>
-            <input type="submit" name="action" onclick="LoginClick" value="Login"/>
+            <input type="submit" name="action" onclick="LoginClick()" value="Login"/>
             <input type="checkbox" name="ckRemember" checked="true"/>
-            <!--            <input type="submit" name="action" onclick="RegisterClick" value="Register"/>-->
-        </FORM>
+            <!--            <input type="submit" name="action" onclick="RegisterClick()" value="Register"/>-->
+        </Form>
 
 
-        <%            } else {           
+        <%            } else {
         %>
         <h1>Login Form!</h1>
-        <!--<FORM id="frmLogin" action="Controller?ac=add" onclick="LoginClick">-->
-        <FORM id="frmLogin" action="MySeverlet" onclick="LoginClick" method="post">
+        <!--<FORM id="frmLogin" action="Controller?ac=add">-->
+        <FORM id="frmLogin" action="MySeverlet" method="post">
             User:<input type="text" name="txtUser" value="" /><br/>
             Pass:<input type="password" name="txtPass"/><br/>
-            <input type="submit" name="action" onclick="LoginClick" value="Login"/>
+            <input type="submit" name="action" onclick="LoginClick()" value="Login"/>
             <input type="checkbox" name="ckRemember" value="Remember Acc"/>
-            <!--            <input type="submit" name="action" onclick="RegisterClick" value="Register"/>-->
+            <!--            <input type="submit" name="action" onclick="RegisterClick()" value="Register"/>-->
         </FORM>
-<%
-}
-%>
+        <%
+            }
+        %>
     </body>
 </html>
