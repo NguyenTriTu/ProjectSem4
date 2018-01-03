@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <StudenList>
+        <Student>
+            <StudentID>A001</StudentID>
+            <StudentName>NVA</StudentName>
+            <Mark>20</Mark>
+            <Gender>Male</Gender>
+        </Student>
+        <Student>
+            <StudentID>A002</StudentID>
+            <StudentName>NVB</StudentName>
+            <Mark>10</Mark>
+            <Gender>FeMale</Gender>
+        </Student>
+        <Student>
+            <StudentID>A003</StudentID>
+            <StudentName>NVC</StudentName>
+            <Mark>30</Mark>
+            <Gender>Male</Gender>
+        </Student>
+    </StudenList>
+</root>
