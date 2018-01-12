@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <ChildList>
+        <Child>
+            <Name>Child 1</Name>
+            <Age>11</Age>
+            <Game>Game 1</Game>
+            <Cartoon>Cartoon 1</Cartoon>
+            <Story>Story 1</Story>
+            <Song>Song 1</Song>
+        </Child>
+        <Child>
+            <Name>Child 2</Name>
+            <Age>12</Age>
+            <Game>Game 2</Game>
+            <Cartoon>Cartoon 2</Cartoon>
+            <Story>Story 2</Story>
+            <Song>Song 2</Song>
+        </Child>
+        <Child>
+            <Name>Child 3</Name>
+            <Age>13</Age>
+            <Game>Game 3</Game>
+            <Cartoon>Cartoon 3</Cartoon>
+            <Story>Story 3</Story>
+            <Song>Song 3</Song>
+        </Child>
+        <Child>
+            <Name>Child 4</Name>
+            <Age>14</Age>
+            <Game>Game 4</Game>
+            <Cartoon>Cartoon 4</Cartoon>
+            <Story>Story 4</Story>
+            <Song>Song 4</Song>
+        </Child>
+    </ChildList>
+</root>

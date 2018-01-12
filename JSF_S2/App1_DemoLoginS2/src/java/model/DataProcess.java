@@ -5,11 +5,17 @@
  */
 package model;
 
+import app.demo;
 import entity.Book;
+import entity.ListBook;
+import java.io.File;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.ArrayList;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 /**
  *
@@ -44,7 +50,7 @@ public class DataProcess {
         return f;
     }
 
-    public ArrayList<Book> getData() {
+    public static ArrayList<Book> getData() {
         ArrayList lstbook = new ArrayList();
         String sql = "Select * from tblBook";
         try {
@@ -132,4 +138,20 @@ public class DataProcess {
         return nBook;
     }
 
+    public static ArrayList<Book> unma(String path) {
+        ArrayList<Book> list = new ArrayList<>();
+        try {
+            JAXBContext jaxBContext = JAXBContext.newInstance(ListBook.class);
+            Unmarshaller jaxbUmar = jaxBContext.createUnmarshaller();
+            ListBook books = (ListBook) jaxbUmar.unmarshal(new File(path));
+            for (Book book : books.getBooks()) {
+                System.out.println("Id" + book.getBookId());
+                list.add(book);
+            }
+        } catch (JAXBException ex) {
+            System.out.println(ex.getMessage());
+            ex.printStackTrace();
+        }
+        return list;
+    }
 }

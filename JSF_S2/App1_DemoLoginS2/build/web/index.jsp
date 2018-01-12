@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Dec 21, 2017, 11:46:06 PM
-    Author     : Apple
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>

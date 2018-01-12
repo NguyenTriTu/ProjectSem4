@@ -6,7 +6,10 @@
 package app;
 
 import com.opensymphony.xwork2.ActionSupport;
+import entity.Book;
 import java.util.ArrayList;
+import java.util.logging.Logger;
+import javax.xml.bind.JAXBException;
 import model.DataProcess;
 
 /**
@@ -15,7 +18,8 @@ import model.DataProcess;
  */
 public class ViewAction extends ActionSupport {
 
-    private ArrayList items;
+    private String path = "src//data//Data.xml";
+    private ArrayList<Book> items;
 
     public ViewAction() {
     }
@@ -24,13 +28,12 @@ public class ViewAction extends ActionSupport {
         return "success";
     }
 
-    public ArrayList getItems() {
-        DataProcess dt = new DataProcess();
-        items = dt.getData();
+    public ArrayList<Book> getItems() {
+        items = DataProcess.unma(path);
         return items;
     }
 
-    public void setItems(ArrayList items) {
+    public void setItems(ArrayList<Book> items) {
         this.items = items;
     }
 

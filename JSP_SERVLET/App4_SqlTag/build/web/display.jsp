@@ -15,7 +15,7 @@
     </head>
     <body>
         <sql:setDataSource var="dbsource" driver="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-                           url="jdbc:sqlserver://127.0.0.1:1433;databaseName=loginjdbc"
+                           url="jdbc:sqlserver://127.0.0.1:1433;databaseName=LoginMVC"
                            user="sa"  password="123456"/>
 
         <sql:query dataSource="${dbsource}" var="result">

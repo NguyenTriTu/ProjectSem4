@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListBook>
+    <Book>
+        <bookId>ID 1</bookId>
+        <title>Title 1</title>
+        <price>Price 1</price>
+        <description>Des 1</description>
+        <dateTime>Date 1</dateTime>
+        <image>Image 1</image>
+    </Book>
+    <Book>
+        <bookId>ID 2</bookId>
+        <title>Title 2</title>
+        <price>Price 2</price>
+        <description>Des 2</description>
+        <dateTime>Date 2</dateTime>
+        <image>Image 2</image>
+    </Book>
+</ListBook>

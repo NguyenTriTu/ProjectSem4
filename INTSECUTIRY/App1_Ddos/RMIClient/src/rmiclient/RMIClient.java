@@ -21,6 +21,7 @@ public class RMIClient {
     public static void main(String[] args) {
 
         String url = "rmi://localhost:1089/mysever";
+
         try {
             int x = 10, y = 10;
             SeverInterface s = (SeverInterface) Naming.lookup(url);

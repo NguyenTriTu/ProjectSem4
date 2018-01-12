@@ -31,9 +31,5 @@ public class Demo_Dom {
         String path = "src\\app\\Data.xml";
         String id = "A001";
         DOMModel.deleteDOM(path, id);
-
-
-     
-     
     }
 }
