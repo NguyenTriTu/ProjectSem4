@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">  
+        <action name="" class="vuong.com.action.HomeAction">  
+            <result name="success">Home.jsp</result>  
+        </action>  
+        <action name="ProductAction" class="vuong.com.action.ProductAction">  
+            <result name="success">Home.jsp</result>  
+        </action>  
+        <action name="EditProductAction" class="vuong.com.action.EditProductAction">  
+            <result name="success">EditProduct.jsp</result>  
+        </action>  
+        <action name="DeleteProductAction" class="vuong.com.action.DeleteProductAction">  
+            <result name="success">Home.jsp</result>  
+        </action>  
+        <action name="Login" class="vuong.com.action.Login">
+            <result name="input">Login.jsp</result>
+            <result name="success">Home.jsp</result>
+        </action>
+    </package> 
+</struts>
